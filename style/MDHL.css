@@ -1,0 +1,493 @@
+/* --- Normalization ----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------/// General Styles ////--------*/
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  -- Header -- */
+header{
+    background-image: linear-gradient(to right, rgb(50, 15, 15), rgb(255, 111, 0));
+    background-repeat: no-repeat round;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.Title{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: rgb(250, 218, 77) ;
+-webkit-text-stroke: 0.1px red;
+text-shadow: -5px 1px  rgba(52, 136, 101, 0.945);
+font-size: 4.5vh;
+
+}
+
+#MightyDucksLogo{
+
+    width: 33vh;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    position:relative;
+    top: 12vh;
+    right: -4vw;
+    z-index: 20
+}
+
+/* --- Nav Bar ---- */
+nav{   
+    width: 33vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none; 
+    color: rgba(130, 36, 12, 0.907); 
+}
+
+#homenav{
+    font-family: 'PT Sans', sans-serif;
+    background-color: white;
+    padding: 15px;
+    border-radius: 0.80rem ;
+    font-size: 1.5vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+#aboutnav{
+    font-family: 'PT Sans', sans-serif;
+    background-color: white;
+    padding: 15px;
+    border-radius: 0.80rem;
+    font-size: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+#contactnav{
+    font-family: 'PT Sans', sans-serif;
+    background-color: white;
+    padding: 15px;
+    border-radius: 0.80rem ;
+    font-size: 1.5vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+#gameinfonav{
+    font-family: 'PT Sans', sans-serif;
+    background-color: white;
+    padding: 15px;
+    border-radius: 0.80rem ;
+    font-size: 1.5vh;
+    display: flex;
+    align-items: center;
+}
+
+#rulesnav{
+    font-family: 'PT Sans', sans-serif;
+    background-color: white;
+    padding: 15px;
+    border-radius: 0.80rem ;
+    font-size: 1.5vh;
+    display: flex;
+    align-items: center;
+}
+
+#registrationnav{
+    font-family: 'PT Sans', sans-serif;
+    background-color: white;
+    padding: 15px;
+    border-radius: 0.80rem ;
+    font-size: 1.5vh;
+    display: flex;
+    align-items: center;
+}
+
+/* -- Nav Hover -- */
+
+#homenav:hover{
+    background-color: rgb(236, 225, 225);
+    box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.578);  
+}
+
+#aboutnav:hover{
+    background-color: rgb(236, 225, 225);
+    box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.578);
+}
+
+#contactnav:hover{
+    background-color: rgb(236, 225, 225);
+    box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.578);
+}
+
+#gameinfonav:hover{
+    background-color: rgb(236, 225, 225);
+    box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.578);
+}
+
+#rulesnav:hover{
+    background-color: rgb(236, 225, 225);
+    box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.578);
+}
+
+#registrationnav:hover{
+    background-color: rgb(236, 225, 225);
+    box-shadow: 3px -3px 5px 1px rgba(0, 0, 0, 0.578);
+}
+/* -- Main --- */
+main{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(../img/design1_image1.jpg);
+    background-size: cover;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: 50%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.mainbox{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PT Sans', sans-serif;
+    color: rgba(130, 36, 12, 0.907);
+    background-color: white;
+    padding-top: 0.5rem;
+    border-radius: 1rem ;
+    position: relative;
+    top: 3rem;
+    width: 45vw;
+    height: 15%;
+}
+
+
+/* -- Footer--- */
+
+footer{
+    background-image: linear-gradient(to right, rgb(50, 15, 15), rgb(255, 111, 0));
+    background-repeat: no-repeat round;
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* ------------ /// INDEX //// -----------*/
+h3{
+    font-size: 3.5vh;
+}
+
+.eventshockey{
+    font-size: 2.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 1rem;
+    height: 10vh;
+    width: 40vw;
+    
+}
+
+.event1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.event2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.event3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* ---------//// ABOUT US ///// ---------- */
+.aboutusbox{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'PT Sans', sans-serif;
+    color: rgba(130, 36, 12, 0.907);
+    background-color: white;
+    padding-top: 0.5rem;
+    border-radius: 1rem ;
+    position: relative;
+    top: 4rem;
+    width: 60vw;
+    height: 15%;
+}
+
+h4{
+    font-size: 4vh;
+}
+
+.aboutusinformation{
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+}
+
+/* -------- //// CONTACT US /// ---------- */
+.contactusbox{
+    padding: 1.3rem;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'PT Sans', sans-serif;
+    color: rgba(130, 36, 12, 0.907);
+    background-color: white;
+    padding-top: 0.5rem;
+    border-radius: 1rem ;
+    width: auto;
+    position: relative;
+    top: 3vh;
+    right: 1.5vw;
+}
+
+h5{
+    font-size: 4vh; 
+}
+
+.contactus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----- //// RULES ///------- */
+
+.rulesbox{
+    padding: 3%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.3vh;
+    color: rgba(130, 36, 12, 0.907);
+    background-color: white;
+    padding-top: 0.5rem;
+    border-radius: 1rem ;
+    position: relative;
+    top: 5rem;
+    width: 75vw;
+    height: auto;
+}
+
+h6{
+    font-size: 3vh;
+}
+.rulesheadtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rulestitles{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.listrules{
+    margin-left: 1rem;
+}
+
+.listplay{
+    margin-left: 1rem;
+}
+
+
+h6{
+    font-size: 2.3vh;
+}
+
+li ol{
+    margin-left: 1rem;
+}
+
+ul li{
+    list-style: circle;
+}
+
+/* --------- ///// GAMES INFO ///// ---------- */
+
+.tablecontainer{
+    padding: 3%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.1vh;
+    color: rgba(130, 36, 12, 0.907);
+    background-color: white;
+    padding-top: 0.5rem;
+    border-radius: 1rem ;
+    position: relative;
+    top: 10vh;
+    width: 40vw;
+    height: auto;
+}
+
+table{
+margin: 2%;
+
+}
+
+.infocontainer{
+display: flex;
+flex-direction: column; 
+justify-content: space-around;
+}
+
+tbody{
+    position: relative;
+    right: -1.7rem;
+}
+
+/* ----------- ///// REGISTRATION //// -------*/
+
+.registrationbox{
+    padding: 3%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2vh;
+    color: rgba(130, 36, 12, 0.907);
+    background-color: white;
+    padding-top: 0.5rem;
+    border-radius: 1rem ;
+    position: relative;
+    top: 9vh;
+    width: 50vw;
+    height: auto;
+    gap: 1rem;
+
+}
+
+form{
+    height: 100%;
+    column-gap: 10rem;
+
+}
+
+
+.NamesOfThePlayers{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.GenderAndGrade{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    
+}
+
+
+.playerspositions{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 6rem;
+
+}
+
+.positions1{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.positions2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.playerssizes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5rem;
+
+}
+.sizes1{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.sizes2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+fieldset{
+    border: none;
+}
